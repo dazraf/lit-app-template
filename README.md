@@ -15,8 +15,8 @@ Run this script:
 ```bash
 git clone https://github.com/dazraf/lit-app-template "${PROJECT_NAME}"
 cd "${PROJECT_NAME}"
-npm i
 rm -rf .git && git init && git add . && git commit -m "project initialization"
+npm i
 ```
 
 # Project Scripts
