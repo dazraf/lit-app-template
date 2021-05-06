@@ -4,8 +4,15 @@ A web application template using [Typescript](https://www.typescriptlang.org/) a
 
 # Project Setup
 
+Set a variable with your project name.
+
 ```bash
 PROJECT_NAME="your-project-name"
+```
+
+Run this script:
+
+```bash
 git clone https://github.com/dazraf/lit-app-template "${PROJECT_NAME}"
 cd "${PROJECT_NAME}"
 rm -rf .git && git init && git add . && git commit -m "project initialization"
