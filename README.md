@@ -1,8 +1,17 @@
 # Lit App Template
 
-A [Lit](https://lit.dev) application template. 
+A web application template using [Typescript](https://www.typescriptlang.org/) and [Lit](https://lit.dev). Nothing fancy.
 
-# Available NPM scripts
+# Project Setup
+
+```bash
+PROJECT_NAME="your-project-name"
+git clone https://github.com/dazraf/lit-app-template "${PROJECT_NAME}"
+cd "${PROJECT_NAME}"
+rm -rf .git && git init && git add . && git commit -m "project initialization"
+```
+
+# Project Scripts
 
 * `npm run build` - build the application 
 * `npm start` - start the app with a webserver. Rebuilds when there is a change in the source.
