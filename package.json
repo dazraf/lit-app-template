@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "build": "rimraf dist && tsc && rollup -c rollup.config.js",
+    "start:build": "npm run build && web-dev-server --root-dir dist --app-index index.html --open --compatibility none",
+    "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\""
+  },
+  "devDependencies": {
+    "@open-wc/building-rollup": "^1.10.0",
+    "deepmerge": "^4.2.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.45.2",
+    "@web/dev-server": "^0.1.15",
+    "concurrently": "^5.3.0",
+    "typescript": "^4.2.4",
+    "tslib": "^2.2.0"
+  },
+  "name": "lit-app-template",
+  "version": "1.0.0",
+  "description": "A Lit typescript web application template",
+  "author": "lit-play",
+  "license": "MIT",
+  "dependencies": {
+    "lit": "^2.0.0-rc.1"
+  }
+}
